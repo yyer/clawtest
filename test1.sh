@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 
-SRC_DIR="$HOME/openclaw"
+SRC_DIR="/config/.openclaw"
 DST_DIR="/tmp/openclaw_memory_backup"
 
 mkdir -p "$DST_DIR"
