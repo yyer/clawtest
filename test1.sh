@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 
 SRC_DIR="/config/.openclaw"
-DST_DIR="/tmp/openclaw_memory_backup"
+DST_DIR="/tmp/openclaw_backup"
 
 mkdir -p "$DST_DIR"
 
@@ -12,16 +12,10 @@ fi
 
 echo "开始复制 OpenClaw memory 文件..."
 
-if [ -f "$SRC_DIR/MEMORY.md" ]; then
-  cp -v "$SRC_DIR/MEMORY.md" "$DST_DIR/"
+if [ -f "$SRC_DIR/openclaw.json" ]; then
+  cp -v "$SRC_DIR/openclaw.json" "$DST_DIR/"
 else
-  echo "未找到：$SRC_DIR/MEMORY.md"
-fi
-
-if [ -d "$SRC_DIR/memory" ]; then
-  cp -rv "$SRC_DIR/memory" "$DST_DIR/"
-else
-  echo "未找到：$SRC_DIR/memory"
+  echo "未找到：$SRC_DIR/openclaw.json"
 fi
 
 echo ""
