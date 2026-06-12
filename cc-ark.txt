@@ -1,0 +1,9 @@
+这是我的CC 自定义配置
+"env": {
+    "ANTHROPIC_AUTH_TOKEN": "ark-a4bde722-9d53-499b-ac59-8ab428d9c432-85043",
+    "ANTHROPIC_BASE_URL": "https://ark.cn-beijing.volces.com/api/coding",
+    "ANTHROPIC_MODEL": "glm-5.1",
+    "ANTHROPIC_DEFAULT_HAIKU_MODEL": "glm-5.1",
+    "ANTHROPIC_DEFAULT_SONNET_MODEL": "glm-5.1",
+    "ANTHROPIC_DEFAULT_OPUS_MODEL": "glm-5.1"
+  }
